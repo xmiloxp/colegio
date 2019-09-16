@@ -1,0 +1,176 @@
+@import '../base/index';
+
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: $font-size-base;
+  font-weight: $btn-font-weight;
+  height: $btn-height-base;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.375em - 1px);
+  padding-left: calc(0.625em - 1px);
+  padding-right: calc(0.625em - 1px);
+  padding-top: calc(0.375em - 1px);
+  position: relative;
+  vertical-align: top;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: $btn-default-bg;
+  border-color: $btn-default-border;
+  color: $btn-default-color;
+  box-shadow: none;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  text-align: center;
+  white-space: nowrap;
+  &:hover,&:focus,&:active {
+    outline: none;
+    box-shadow: $box-shadow-base;
+    color: $btn-default-color;
+    background-color: $btn-default-bg;
+    border-color: $btn-default-border;
+  }
+  & .fab,& .fas,& .far,& .fal, &.material-icons {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    margin-top: -1em;
+    margin-bottom: -1em;
+    font-size: 1.1rem;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+  & svg {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+  & .justIcon {
+    & .fab,& .fas,& .far,& .fal,& .material-icons {
+      margin-top: 0px;
+      position: absolute;
+      width: 100%;
+      transform: none;
+      left: 0px;
+      top: 0px;
+      height: 100%;
+      line-height: 41px;
+      font-size: 20px;
+    }
+  }
+}
+.white {
+  background-color: "#FFFFFF";
+  border-color: transparent;
+  color: #0a0a0a;
+  &:focus,&:hover {
+    background-color: #f9f9f9;
+    border-color: transparent;
+    color: #0a0a0a;
+  }
+}
+.primary {
+  background-color: $btn-primary-bg;
+  border-color: transparent;
+  color: #fff;
+  &:hover,&:focus {
+    background-color: $blue-7;
+    color: #fff;
+  }
+}
+.info {
+  background-color: $info-color;
+  border-color: transparent;
+  color: #fff;
+  &:hover,&:focus {
+    background-color: $blue-7;
+    color: #fff;
+  }
+}
+.success {
+  background-color: $success-color;
+  border-color: transparent;
+  color: #fff;
+  &:hover,&:focus {
+    background-color: $green-7;
+    color: #fff;
+  }
+}
+.warning {
+  background-color: $warning-color;
+  border-color: transparent;
+  color: #fff;
+  &:hover,&:focus {
+    background-color: $gold-7;
+    color: #fff;
+  }
+}
+.danger {
+  background-color: $error-color;
+  border-color: transparent;
+  color: #fff;
+  &:hover,&:focus {
+    background-color: $red-7;
+    color: #fff;
+  }
+}
+.transparent {
+    &,&:focus,&:hover {
+      color: inherit;
+      background: transparent;
+      box-shadow: none;
+    }
+}
+.disabled {
+  opacity: 0.65;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.lg {
+    font-size: $font-size-lg;
+    line-height: 1.5;
+    height: $btn-height-lg;
+}
+.sm {
+    font-size: $font-size-sm;
+    line-height: 1.5;
+    border-radius: 2px;
+    height: $btn-height-sm;
+}
+.round {
+    border-radius: 30px;
+}
+.block {
+    width: 100% !important;
+}
+.link {
+    &,&:hover,&:focus {
+      background-color: transparent;
+      color: #999999;
+      box-shadow: none;
+    }
+}

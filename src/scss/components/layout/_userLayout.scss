@@ -1,0 +1,66 @@
+@import '../../base/index';
+
+.login-register {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  padding: 10% 0;
+  position: fixed; }
+
+.login-box {
+  width: 400px;
+  margin: 0 auto; }
+.login-box .footer {
+  width: 100%;
+  left: 0px;
+  right: 0px; }
+.login-box .social {
+  display: block;
+  margin-bottom: 30px; }
+
+.login-sidebar {
+  padding: 0px;
+  margin-top: 0px; }
+.login-sidebar .login-box {
+  right: 0px;
+  position: absolute;
+  // z-index: 99;
+  height: 100%; }
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;}
+.card {
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;}
+.card {
+  margin-bottom: 30px;}
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;}
+html body .db {
+  display: block;}
+.text-center{
+  text-align: center;}
+.desc{
+  text-align: center;
+  font-size: 16px;
+}
+.margin-top-40{
+  margin-top: 40px !important;
+}
+.margin-bottom-20{
+  margin-bottom: 20px !important;
+}

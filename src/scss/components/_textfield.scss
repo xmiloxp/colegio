@@ -1,0 +1,57 @@
+@import '../base/index';
+
+.disabled {
+    &:before {
+    background-color: transparent !important
+    }
+}
+.underline {
+    &:hover:not(.disabled):before,&:before {
+    border-color: #D2D2D2 !important;
+    border-width: 1px !important;
+    }
+    &:after {
+    border-color: $primary-color !important;
+    }
+}
+.underlineError {
+    &:after {
+    border-color: $error-color !important;
+    }
+}
+.underlineSuccess {
+    &:after {
+    border-color: $success-color !important;
+    }
+}
+.labelRoot {
+    color: #AAAAAA !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+.labelRootError {
+    color: $error-color !important;
+}
+.labelRootSuccess {
+    color: $success-color !important;
+}
+.feedback {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    pointer-events: none;
+}
+.marginTop {
+    margin-top: 16px !important;
+}
+.formControl {
+    padding-bottom: 10px !important;
+    margin: 27px 0 0 0;
+    position: relative;
+}

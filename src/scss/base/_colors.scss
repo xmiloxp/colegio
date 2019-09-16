@@ -1,0 +1,210 @@
+// color palettes
+$layout-p-1: #E1F4FB;
+$layout-p-2: #B4E4F5;
+$layout-p-3: #84D1EF;
+$layout-p-4: #58BFE8;
+$layout-p-5: #3CB2E4;
+$layout-p-6: #27A5E0; // primary
+$layout-p-7: #2297D2;
+$layout-p-8: #1B85BF;
+$layout-p-9: #1974AB;
+$layout-p-10: #105589;
+
+$layout-pl-1: #E4F6FF;
+$layout-pl-2: #BAE7FF;
+$layout-pl-3: #8ED7FF;
+$layout-pl-4: #68C8FF; // primary
+$layout-pl-5: #54BBFE;
+$layout-pl-6: #4CAFFC;
+$layout-pl-7: #48A0EC;
+$layout-pl-8: #438DD7;
+$layout-pl-9: #3E7CC3;
+$layout-pl-10: #355CA0;
+
+$layout-pd-1: #E0F3FA;
+$layout-pd-2: #B0DFF2;
+$layout-pd-3: #7DCAE9;
+$layout-pd-4: #4EB5DF;
+$layout-pd-5: #2DA6DA;
+$layout-pd-6: #0C98D5;
+$layout-pd-7: #068BC7;
+$layout-pd-8: #0079B4;
+$layout-pd-9: #0068A0; // primary
+$layout-pd-10: #00497E;
+
+$layout-s-1: #FFEBEE;
+$layout-s-2: #FFCDD2;
+$layout-s-3: #EF9A9A;
+$layout-s-4: #E57373;
+$layout-s-5: #EF5350;
+$layout-s-6: #F44336; // primary
+$layout-s-7: #E53935;
+$layout-s-8: #D32F2F;
+$layout-s-9: #C62828;
+$layout-s-10: #B71B1C;
+
+$layout-sl-1: #FBE7E6;
+$layout-sl-2: #FFC6BA;
+$layout-sl-3: #FFA08E;
+$layout-sl-4: #FF7961;// primary
+$layout-sl-5: #FF5840;
+$layout-sl-6: #FE3222;
+$layout-sl-7: #F32C1E;
+$layout-sl-8: #E52419;
+$layout-sl-9: #D71B15;
+$layout-sl-10: #BD060C;
+
+$layout-sd-1: #FFEAED;
+$layout-sd-2: #FFCBCF;
+$layout-sd-3: #F29795;
+$layout-sd-4: #E86E6B;
+$layout-sd-5: #F14B46;
+$layout-sd-6: #F63928;
+$layout-sd-7: #EF2D28;
+$layout-sd-8: #D52123;
+$layout-sd-9: #C8181B;
+$layout-sd-10: #BA000C; // primary
+
+$blue-1: #e2f1ff;
+$blue-2: #badcff;
+$blue-3: #8ec7ff;
+$blue-4: #5fb1ff;
+$blue-5: #3ba0ff;
+$blue-6: #188fff; // primary
+$blue-7: #1e81f0;
+$blue-8: #206fdc;
+$blue-9: #205dca;
+$blue-10: #1f3eaa;
+
+$purple-1: #efe7f9;
+$purple-2: #d6c3f1;
+$purple-3: #ba9ce8;
+$purple-4: #9f72e0;
+$purple-5: #8951d9;
+$purple-6: #722ed1; // primary
+$purple-7: #6829cb;
+$purple-8: #5920c2;
+$purple-9: #4b19bb;
+$purple-10: #3104b1;
+
+$cyan-1: #dff4f5;
+$cyan-2: #ade4e5;
+$cyan-3: #72d4d5;
+$cyan-4: #13c2c2; // primary
+$cyan-5: #00b4b2;
+$cyan-6: #00a5a1;
+$cyan-7: #009792;
+$cyan-8: #007881;
+$cyan-9: #007770;
+$cyan-10: #005a51;
+
+$green-1: #ecf8e6;
+$green-2: #d0eec0;
+$green-3: #b0e297;
+$green-4: #8dd66b;
+$green-5: #71cd47;
+$green-6: #52c41a; // primary
+$green-7: #42b411;
+$green-8: #26a001;
+$green-9: #008c00;
+$green-10: #006a00;
+
+$magenta-1: #fae4f1;
+$magenta-2: #f3badc;
+$magenta-3: #ef8cc4;
+$magenta-4: #ec5bab;
+$magenta-5: #eb2f96; // primary
+$magenta-6: #ec0080;
+$magenta-7: #da007c;
+$magenta-8: #c30075;
+$magenta-9: #ad006f;
+$magenta-10: #850065;
+
+// alias of magenta
+$pink-1: #fae4f1;
+$pink-2: #f3badc;
+$pink-3: #ef8cc4;
+$pink-4: #ec5bab;
+$pink-5: #eb2f96; // primary
+$pink-6: #ec0080;
+$pink-7: #da007c;
+$pink-8: #c30075;
+$pink-9: #ad006f;
+$pink-10: #850065;
+
+$red-1: #ffebee;
+$red-2: #ffccd2;
+$red-3: #f99798;
+$red-4: #f26d70;
+$red-5: #fe474a;
+$red-6: #ff2f2c;
+$red-7: #f5222d; // primary
+$red-8: #e31127;
+$red-9: #d6001f;
+$red-10: #c8000f;
+
+$orange-1: #fff3e1;
+$orange-2: #ffe0b4;
+$orange-3: #ffcc83;
+$orange-4: #ffb652;
+$orange-5: #ffa630;
+$orange-6: #fe9817;
+$orange-7: #fa8c16; // primary
+$orange-8: #f47c14;
+$orange-9: #ed6d13;
+$orange-10: #e35311;
+
+$yellow-1: #fefee6;
+$yellow-2: #fdfac1;
+$yellow-3: #fcf697;
+$yellow-4: #faf26b;
+$yellow-5: #f7ee45;
+$yellow-6: #f4e910;
+$yellow-7: #fadb14; // primary
+$yellow-8: #fac301;
+$yellow-9: #faaa00;
+$yellow-10: #fa7f00;
+
+$volcano-1: #fbe8e6;
+$volcano-2: #fecbba;
+$volcano-3: #fda98e;
+$volcano-4: #fc8761;
+$volcano-5: #fb6d3f;
+$volcano-6: #fa531c; // primary
+$volcano-7: #ef4e18;
+$volcano-8: #e14713;
+$volcano-9: #d3400f;
+$volcano-10: #bb3305;
+
+$geekblue-1: #e9ebfd;
+$geekblue-2: #c8cdfa;
+$geekblue-3: #a2adf6;
+$geekblue-4: #788cf3;
+$geekblue-5: #5670f0;
+$geekblue-6: #2f55eb; // primary
+$geekblue-7: #294cdf;
+$geekblue-8: #1c41d3;
+$geekblue-9: #0a35c7;
+$geekblue-10: #001eb6;
+
+$lime-1: #f3fbe5;
+$lime-2: #e2f3be;
+$lime-3: #ceed93;
+$lime-4: #bbe567;
+$lime-5: #addf43;
+$lime-6: #a0d911; // primary
+$lime-7: #97c703;
+$lime-8: #89b100;
+$lime-9: #7c9A00;
+$lime-10: #667600;
+
+$gold-1: #fff7e1;
+$gold-2: #feeab3;
+$gold-3: #fddc83;
+$gold-4: #fcd051;
+$gold-5: #fbc42e;
+$gold-6: #fabb18;
+$gold-7: #faad14; // primary
+$gold-8: #f99b13;
+$gold-9: #f98a13;
+$gold-10: #f76b12;

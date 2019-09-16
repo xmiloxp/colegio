@@ -1,0 +1,35 @@
+.btn-toolbar-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+
+  & .btn {
+    padding: 4px 25px;
+    text-transform: none;
+  }
+  @media screen and (max-width: 992px) {
+    position: relative;
+    margin-top: 10px;
+  }
+}
+
+
+
+.products-list__search {
+  margin: 0;
+  position: relative;
+
+  svg {
+    position: absolute;
+    right: 5px;
+    top: 9px;
+    fill: $color-additional;
+    height: 14px;
+    width: 14px;
+  }
+
+  input {
+    padding-right: 20px;
+  }
+}

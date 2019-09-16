@@ -1,0 +1,62 @@
+
+.carrito{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+    @include respondto(minxs) {}
+    @include respondto(maxxs) {}
+    @include respondto(sm) {
+        background: $primary-grey;
+    }
+    @include respondto(md) {
+        background: $primary-grey;
+    }
+    @include respondto(lg) {
+        background: $primary-grey;
+    }
+    .icono-carrito{
+        position: relative;
+        margin: 0 15px 0 0;
+        i{
+            color: $white;
+            font-size: 28px;
+        }
+        .carrito-cantidad{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background: $white;
+            border-radius: 100%;
+            border: 1px solid $primary-grey;
+            top: -5px;
+            right: -14px;
+            min-height: 18px;
+            min-width: 18px;
+            p{
+                font-family: $font-Mont-Light;
+                font-weight: 400;
+                font-size: 7px;
+                color: $primary-grey;
+            }
+        }
+    }
+    .monto-total{
+        display: flex;
+        p{
+            padding: 0 0 0 5px;
+            font-family: $font-Mont-Light;
+            font-weight: 600;
+            font-size: 14px;
+            color: $white;
+        }
+        i{
+            color: $white;
+            padding: 0 0 0 5px;
+        }
+    }   
+}

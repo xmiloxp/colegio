@@ -1,0 +1,160 @@
+
+// BLOCK OFERTA
+.fm-container-oferta{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background: $fm-blanco;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    transition: opacity .2s linear;
+    visibility: hidden;
+    z-index: 0;
+    @include respondto(minxs) {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+    }
+    @include respondto(maxxs) {
+        width: 330px;
+        max-height: 90vh;
+    }
+    @include respondto(sm) {
+        width: 330px;
+        max-height: 90vh;
+    }
+    @include respondto(md) {
+        width: 330px;
+        max-height: 90vh;
+    }
+    @include respondto(lg) {
+        width: 330px;
+        max-height: 90vh;
+    }
+    &.active{
+        z-index: 9999999999;
+        opacity: 1;
+        visibility: visible;
+    }
+    .fm-head-oferta{
+        display: flex;
+        text-align: left;
+        align-items: center;
+        position: relative;
+        height: 52px;
+        background: $fm-gris-600;
+        .fm-title-oferta{
+            padding: 0 0 0 10px;
+            text-transform: uppercase;
+            color: $fm-text-despacho;
+            font-family: $font-Mont-Regular;
+            font-weight: 400;
+            @include fontsizeheight(16px,1.1,16px,1.1,16px,1.1);
+        }
+        .fm-close-oferta{
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            &:active{
+                transform: translateY(-51%);
+            }
+            i{}
+        }
+    }
+    .fm-body-oferta{
+        position: relative;
+        background: $fm-verde;
+        text-align: center;
+        padding: 37px 17px 37px 17px;
+        &:before{
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 7px;
+            height: calc(100% - 14px);
+            width: calc(100% - 14px);
+            border: 1px dashed $fm-blanco;
+            z-index: 0;
+        }
+        .fm-price-oferta{
+            color: $fm-blanco;
+            font-family: $font-Mont-Bold;
+            font-weight: 700;
+            @include fontsizeheight(90px,1.1,90px,1.1,90px,1.1);
+        }
+        .fm-texto-oferta{
+            color: $fm-blanco;
+            font-family: $font-Mont-Regular;
+            font-weight: 400;
+            @include fontsizeheight(20px,1.1,20px,1.1,20px,1.1);
+        }
+    }
+    .fm-footer-oferta{
+        text-align: center;
+        background: $fm-gris-500;
+        padding: 30px 0 0 0;
+        .fm-label-codigo{
+            padding: 0 0 15px 0;
+            text-transform: uppercase;
+            color: $fm-text-despacho;
+            font-family: $font-Mont-Regular;
+            font-weight: 700;
+            @include fontsizeheight(12px,1.1,12px,1.1,11px,1.1);
+        }
+        .fm-codigo{
+            padding: 0 0 20px 0;
+            text-transform: uppercase;
+            color: $fm-text-despacho;
+            font-family: $font-Mont;
+            font-weight: 700;
+            @include fontsizeheight(36px,1.1,36px,1.1,36px,1.1);
+        }
+        .fm-btn-oferta{
+            display: flex;
+            justify-content: center;
+            padding: 0 0 20px 0;
+            a{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                height: 26px;
+                padding: 2px 15px 2px 15px;
+                text-transform: uppercase;
+                color: $fm-blanco;
+                font-family: $font-Mont-Regular;
+                font-weight: 400;
+                background: $fm-text-despacho;
+                border-radius: 6px;
+                @include fontsizeheight(12px,1.1,12px,1.1,11px,1.1);
+            }
+        }
+        .fm-list-condiciones{
+            width: 100%;
+            text-align: left;
+            background: $fm-blanco;
+            padding: 25px 25px 25px 25px;
+            .fm-condicion{
+                color: $fm-text-despacho;
+                font-family: $font-Mont-Light;
+                font-weight: 400;
+                position: relative;
+                @include fontsizeheight(12px,1.1,12px,1.1,11px,1.1);
+                &:after{
+                    content: '';
+                    position: absolute;
+                    left: -7px;
+                    top: 5px;
+                    height: 4px;
+                    width: 4px;
+                    background: $fm-text-despacho;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}

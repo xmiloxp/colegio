@@ -1,0 +1,132 @@
+.react-select {
+  width: 100%;
+  height: 32px;
+  font-size: 12px;
+}
+
+.react-select__control {
+  height: 32px;
+  border-radius: 0 !important;
+  transition: all 0.3s;
+  min-height: 32px !important;
+
+  border: 1px solid $colorFieldsBorder;
+  background-color: $colorBackground;
+
+  // .react-select__value-container{
+  //   height: 32px;
+  //   .react-select__single-value{
+  //     top: 65%;
+  //   }
+  // }
+  &.react-select__control--is-focused, &:hover {
+    border-color: $color-blue !important;
+    box-shadow: none;
+    background: transparent;
+  }
+  &.react-select__control--is-disabled {
+    border-color: hsl(0,0%,90%) !important;
+    box-shadow: none;
+    background: hsl(0,0%,95%);
+  }
+}
+.react-select__value-container{
+  height: 32px;
+}
+.react-select__input {
+  height: 28px;
+}
+.react-select__input input {
+  height: 18px;
+}
+.react-select__indicator-separator {
+  display: none;
+}
+
+.react-select__dropdown-indicator, .react-select__clear-indicator {
+  cursor: pointer;
+  color: $colorIcon;
+
+  svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.react-select__multi-value {
+  background-color: transparent;
+  border: 1px solid $color-blue;
+
+  .react-select__multi-value__label {
+    border-right: 1px solid $color-blue;
+    padding: 3px 6px;
+    color: $colorText;
+  }
+}
+
+.react-select__multi-value__remove {
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
+  color: $colorText;
+}
+
+.react-select__multi-value__label, .react-select__multi-value__remove {
+  background: $colorBackground;
+}
+
+.react-select__single-value {
+  color: $colorText;
+}
+
+.react-select__menu {
+  box-shadow: none !important;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.react-select__menu-list {
+  top: calc(100% + 1px);
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 12px;
+  animation: open 0.3s ease-in-out;
+  overflow: hidden;
+
+  background: $colorBackground;
+  border: 1px solid $colorFieldsBorder;
+}
+
+@keyframes open {
+  0% {
+    max-height: 0
+  }
+  100% {
+    max-height: 200px
+  }
+}
+
+.react-select__option {
+  transition: all 0.3s;
+  border-radius: 0;
+  display: flex;
+  cursor: pointer;
+  padding: 8px 10px;
+  background: $colorBackground;
+  color: $colorText;
+}
+
+.react-select__color {
+  display: block;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin: auto 0 auto 5px;
+}
+
+.form__select-color {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 84px;
+  margin-right: 40px;
+}

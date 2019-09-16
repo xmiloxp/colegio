@@ -1,0 +1,210 @@
+
+// BLOCK SUSCRIBE
+.fm-container-suscribe{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background: $fm-blanco;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    transition: opacity .2s linear;
+    visibility: hidden;
+    z-index: 0;
+    max-width: 100%;
+    @include respondto(minxs) {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+    }
+    @include respondto(maxxs) {
+        width: 400px;
+        max-height: 90vh;
+    }
+    @include respondto(sm) {
+        width: 400px;
+        max-height: 90vh;
+    }
+    @include respondto(md) {
+        width: 400px;
+        max-height: 90vh;
+    }
+    @include respondto(lg) {
+        width: 400px;
+        max-height: 90vh;
+    }
+    &.active{
+        z-index: 9999999999;
+        opacity: 1;
+        visibility: visible;
+    }
+    .fm-head-suscribe{
+        display: flex;
+        text-align: left;
+        align-items: center;
+        position: relative;
+        height: 52px;
+        background: $fm-gris-600;
+        .fm-title-suscribe{
+            padding: 0 0 0 10px;
+            text-transform: uppercase;
+            color: $fm-text-despacho;
+            font-family: $font-Mont-Regular;
+            font-weight: 400;
+            @include fontsizeheight(16px,1.1,16px,1.1,16px,1.1);
+        }
+        .fm-close-suscribe{
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            &:active{
+                transform: translateY(-51%);
+            }
+            i{}
+        }
+    }
+    .fm-body-suscribe{
+        position: relative;
+        background: $fm-naranja;
+        text-align: center;
+        padding: 40px 15px 40px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100% - 52px);
+        @include respondto(minxs) {
+            padding: 40px 10px 40px 15px;
+        }
+        .fm-email-suscribe{
+            position: relative;
+            display: flex;
+            padding: 0 0 8px 0;
+            @include respondto(minxs) {
+                flex: 1;
+                max-width: 260px;
+            }
+            @include respondto(maxxs) {
+                flex: 1;
+            }
+            @include respondto(sm) {
+                flex: 1;
+            }
+            @include respondto(md) {
+                flex: 1;
+            }
+            @include respondto(lg) {
+                flex: 1;
+            }
+            &.error-active{
+                i{
+                    color: $fm-error;
+                }
+                .bar{
+                    height: 2px;
+                    background: $fm-error;
+                }
+                .email-error{
+                    opacity: 1;
+                }
+            }
+            i{
+                color: $fm-blanco;
+                font-size: 16px;
+            }
+            input{
+                flex: 1;
+                appearance: none;
+                outline: none;
+                border: 0;
+                background-color: $fm-naranja !important;
+                color: $fm-blanco !important;
+                font-family: $font-Roboto;
+                height: inherit;
+                @include fontsizeheight(14px,1.1,14px,1.1,14px,1.1);
+                font-weight: 400;
+                padding: 0 0 0 5px;
+                &:focus {
+                    appearance: none;
+                    outline: none;
+                }
+                &:focus ~ .bar:before {
+                    width: 100%;
+                }
+                &::placeholder {
+                    color: #fff;
+                    opacity: .5;
+                }
+            }
+            .bar{
+                position: absolute;
+                display: block;
+                background: $fm-blanco;
+                width: 100%;
+                height: 1px;
+                bottom: 0;
+                &:before {
+                    content: '';
+                    height: 2px;
+                    width: 0;
+                    bottom: 0;
+                    position: absolute;
+                    background: $fm-rojo-600;
+                    transition: 300ms ease all;
+                    left: 0%;
+                }
+            }
+            .email-error{
+                position: absolute;
+                top: calc(100% + 5px);
+                color: $fm-error;
+                font-family: $font-Roboto;
+                @include fontsizeheight(12px,1.1,12px,1.1,12px,1.1);
+                font-weight: 400;
+                transition: 300ms ease all;
+                opacity: 0;
+            }
+        }
+        .fm-btn-suscribe{
+            padding: 0 0 0 10px;
+            @include respondto(minxs) {}
+            @include respondto(maxxs) {
+                max-width: 160px;
+            }
+            @include respondto(sm) {
+                max-width: 160px;
+            }
+            @include respondto(md) {
+                max-width: 160px;
+            }
+            @include respondto(lg) {
+                max-width: 160px;
+            }
+            input{
+                border: none;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+                text-decoration: none;
+                outline: none;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+                color: $fm-naranja !important;
+                background-color: $fm-blanco !important;
+                font-family: $font-Mont-Regular;
+                @include fontsizeheight(14px,1.1,14px,1.1,14px,1.1);
+                font-weight: 400;
+                height: 40px;
+                width: 100%;
+                min-width: 115px;
+                max-width: 160px;
+                cursor: pointer;
+                &:hover {
+                    color: $fm-naranja;
+                    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
+                }
+            }
+        }
+    }
+}

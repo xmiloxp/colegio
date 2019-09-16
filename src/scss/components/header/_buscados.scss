@@ -1,0 +1,594 @@
+
+// BLOCK BUSCADOS
+.container-buscados{
+    position: absolute;
+    top: 100%;
+    z-index: -10;
+    // width: 100%;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    @include respondto(minxs) {
+        width: 100%;
+    }
+    @include respondto(maxxs) {
+        width: 100%;
+    }
+    @include respondto(sm) {}
+    @include respondto(md) {}
+    @include respondto(lg) {}
+    &.focus-active{
+        display: block;
+        z-index: 1200;
+    }
+    .container-aux-buscados{
+        background: #fff;
+        @include respondto(minxs) {
+            width: 100%;
+            height: calc(100vh - 170px);
+        }
+        @include respondto(maxxs) {
+            width: 100%;
+            height: calc(100vh - 170px);
+        }
+        @include respondto(sm) {
+            width: 96vw;
+            max-width: 1170px;
+            // margin: auto;
+        }
+        @include respondto(md) {
+            width: 96vw;
+            max-width: 1170px;
+            // margin: auto;
+        }
+        @include respondto(lg) {
+            // width: 96%;
+            width: 1170px;
+            // margin: auto;
+        }
+        .content-buscados{
+            @include respondto(minxs) {
+                height: calc(100% - 53px);
+            }
+            @include respondto(maxxs) {
+                height: calc(100% - 53px);
+            }
+            @include respondto(sm) {}
+            @include respondto(md) {}
+            @include respondto(lg) {}
+            .lista-productos-buscados{
+                display: flex;
+                flex-wrap: wrap;
+                height: 100%;
+                overflow-y: auto;
+                @include respondto(minxs) {
+                    padding: 0 0 20px 0;
+                }
+                @include respondto(maxxs) {
+                    padding: 0 0 20px 0;
+                }
+                @include respondto(sm) {
+                    padding: 10px 30px;
+                }
+                @include respondto(md) {
+                    padding: 10px 30px;
+                }
+                @include respondto(lg) {
+                    padding: 10px 30px;
+                }
+                .item-producto-buscado{
+                    @include respondto(minxs) {
+                        padding: 15px 8px 0 10px;
+                        width: 100%;
+                    }
+                    @include respondto(maxxs) {
+                        padding: 15px 8px 0 10px;
+                        width: 100%;
+                    }
+                    @include respondto(sm) {
+                        width: 50%;
+                    }
+                    @include respondto(md) {
+                        width: 50%;
+                    }
+                    @include respondto(lg) {
+                        width: 50%;
+                    }
+                    .component-producto{
+                        display: flex;
+                        justify-content: space-between;
+                        @include respondto(minxs) {}
+                        @include respondto(maxxs) {
+                            width: 100%;
+                        }
+                        @include respondto(sm) {
+                            max-width: 450px;
+                            margin: 10px 0;
+                            width: 94%;
+                        }
+                        @include respondto(md) {
+                            max-width: 450px;
+                            margin: 10px 0;
+                            width: 94%;
+                        }
+                        @include respondto(lg) {
+                            max-width: 450px;
+                            margin: 10px 0;
+                            width: 94%;
+                        }
+                        .prod-busca-imagen{
+                            position: relative;
+                            @include respondto(minxs) {}
+                            @include respondto(maxxs) {}
+                            @include respondto(sm) {
+                                padding: 0 15px 0 0;
+                                
+                            }
+                            @include respondto(md) {
+                                padding: 0 15px 0 0;
+                            }
+                            @include respondto(lg) {
+                                padding: 0 15px 0 0;
+                            }
+                            &:after{
+                                content: '';
+                                position: absolute;
+                                top: 5%;
+                                right: 0;
+                                height: 80%;
+                                @include respondto(minxs) {}
+                                @include respondto(maxxs) {}
+                                @include respondto(sm) {
+                                    width: 1px;
+                                    background: $light-divider;
+                                }
+                                @include respondto(md) {
+                                    width: 1px;
+                                    background: $light-divider;
+                                }
+                                @include respondto(lg) {
+                                    width: 1px;
+                                    background: $light-divider;
+                                }
+                            }
+                            img{
+                                max-height: 110px;
+                                @include respondto(minxs) {
+                                    max-width: 70px;
+                                }
+                                @include respondto(maxxs) {
+                                    max-width: 70px;
+                                }
+                                @include respondto(sm) {
+                                    max-width: 90px;
+                                }
+                                @include respondto(md) {
+                                    max-width: 90px;
+                                }
+                                @include respondto(lg) {
+                                    max-width: 90px;
+                                }
+                            }
+                        }
+                        .prod-busca-detalle{
+                            display: flex;
+                            flex-direction: column;
+                            @include respondto(minxs) {
+                                flex: 1;
+                                padding: 0 10px 0 7px;
+                                width: calc(100% - 166px);
+                            }
+                            @include respondto(maxxs) {
+                                flex: 1;
+                                padding: 0 10px 0 7px;
+                                width: calc(100% - 166px);
+                            }
+                            @include respondto(sm) {
+                                flex: 1;
+                                padding: 0 30px 0 10px;
+                                width: calc(100% - 181px);
+                            }
+                            @include respondto(md) {
+                                flex: 1;
+                                padding: 0 30px 0 15px;
+                                width: calc(100% - 181px);
+                            }
+                            @include respondto(lg) {
+                                flex: 1;
+                                padding: 0 30px 0 20px;
+                                width: calc(100% - 181px);
+                            }
+                            .titulo{
+                                padding: 0 0 5px 0;
+                                p{
+                                    font-family: $font-Mont-Regular;
+                                    font-weight: 600;
+                                    @include ajustatrespuntosmultiline(14px, 1.1, 2);
+                                    color: $primary-grey;
+                                    &:hover{
+                                        color: $primary-green;
+                                    }
+                                }
+                            }
+                            .descripcion{
+                                width: 100%;
+                                font-family: $font-Mont-Regular;
+                                font-weight: 400;
+                                @include fontsizeheight(13px,1,13px,1,13px,1);
+                                padding: 0 0 5px 0;
+                                @include ajustacontrespuntos;
+                            }
+                            .precios{
+                                .precio-tachado{
+                                    font-family: $font-Mont-Regular;
+                                    font-weight: 400;
+                                    @include fontsizeheight(13px,1,13px,1,13px,1);
+                                    text-decoration: line-through;
+                                    color: #737373;
+                                    padding: 0 0 5px 0;
+                                }
+                                .precio{
+                                    font-family: $font-Mont-Regular;
+                                    font-weight: 700;
+                                    @include fontsizeheight(14px,1,14px,1,14px,1);
+                                    color: $primary-orange;
+                                }
+                            }
+                        }
+                        .prod-busca-control{
+                            display: flex;
+                            flex-direction: column;
+                            .cont-cantidad{
+                                display: flex;
+                                justify-content: flex-end;
+                                @include respondto(minxs) {
+                                    justify-content: space-between;
+                                }
+                                @include respondto(maxxs) {
+                                    justify-content: space-between;
+                                }
+                                @include respondto(sm) {
+                                    justify-content: flex-end;
+                                }
+                                @include respondto(md) {
+                                    justify-content: flex-end;
+                                }
+                                @include respondto(lg) {
+                                    justify-content: flex-end;
+                                }
+                                .btn-minus-mobile{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 26px;
+                                    height: 40px;
+                                    border-radius: 3px;
+                                    background: #666;
+                                    color: #fff;
+                                    font-size: 12px;
+                                    cursor: pointer;
+                                    transition: all .25s;
+                                    @include respondto(minxs) {}
+                                    @include respondto(maxxs) {}
+                                    @include respondto(sm) {
+                                        display: none;
+                                    }
+                                    @include respondto(md) {
+                                        display: none;
+                                    }
+                                    @include respondto(lg) {
+                                        display: none;
+                                    }
+                                    &:active{
+                                        background: $primary-orange;
+                                    }
+                                    &.no-active{
+                                        background: #d3d3d3;
+                                        cursor: default;
+                                    }
+                                    i{}
+                                }
+                                .cont-cant-left{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    max-width: 46px;
+                                    height: 40px;
+                                    background-color: #f2f2f2;
+                                    overflow: hidden;
+                                    border-radius: 3px;
+                                    @include respondto(minxs) {
+                                        width: 38px;
+                                    }
+                                    @include respondto(maxxs) {
+                                        width: 38px;
+                                    }
+                                    @include respondto(sm) {
+                                        width: calc(100% - 30px);
+                                    }
+                                    @include respondto(md) {
+                                        width: calc(100% - 30px);
+                                    }
+                                    @include respondto(lg) {
+                                        width: calc(100% - 30px);
+                                    }
+                                    .cant-value{
+                                        outline: none;
+                                        appearance: none;
+                                        border: 0;
+                                        right: 0;
+                                        text-align: center;
+                                        background-color: #f2f2f2;
+                                        @include respondto(minxs) {
+                                            max-width: 100%;
+                                            margin-right: 0;
+                                        }
+                                        @include respondto(maxxs) {
+                                            max-width: 100%;
+                                            margin-right: 0;
+                                        }
+                                        @include respondto(sm) {
+                                            max-width: calc(100% + 15px);
+                                            margin-right: -15px;
+                                        }
+                                        @include respondto(md) {
+                                            max-width: calc(100% + 15px);
+                                            margin-right: -15px;
+                                        }
+                                        @include respondto(lg) {
+                                            max-width: calc(100% + 15px);
+                                            margin-right: -15px;
+                                        }
+                                    }
+                                }
+                                .btn-add-mobile{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 26px;
+                                    height: 40px;
+                                    border-radius: 3px;
+                                    background: #666;
+                                    color: #fff;
+                                    font-size: 12px;
+                                    cursor: pointer;
+                                    transition: all .25s;
+                                    @include respondto(minxs) {}
+                                    @include respondto(maxxs) {}
+                                    @include respondto(sm) {
+                                        display: none;
+                                    }
+                                    @include respondto(md) {
+                                        display: none;
+                                    }
+                                    @include respondto(lg) {
+                                        display: none;
+                                    }
+                                    &:active{
+                                        background: $primary-orange;
+                                    }
+                                    &.no-active{
+                                        background: #d3d3d3;
+                                    }
+                                    i{}
+                                }
+                                .cont-cant-right{
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    width: 22px;
+                                    margin-left: 8px;
+                                    @include respondto(minxs) {
+                                        display: none;
+                                    }
+                                    @include respondto(maxxs) {
+                                        display: none;
+                                    }
+                                    @include respondto(sm) {}
+                                    @include respondto(md) {}
+                                    @include respondto(lg) {}
+                                    .btn-add{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: 22px;
+                                        height: 46%;
+                                        border-radius: 3px;
+                                        background: #666;
+                                        color: #fff;
+                                        font-size: 12px;
+                                        cursor: pointer;
+                                        transition: all .25s;
+                                        &:active{
+                                            background: $primary-orange;
+                                        }
+                                        &.no-active{
+                                            background: #d3d3d3;
+                                        }
+                                        i{}
+                                    }
+                                    .btn-minus{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: 22px;
+                                        height: 46%;
+                                        border-radius: 3px;
+                                        background: #666;
+                                        color: #fff;
+                                        font-size: 12px;
+                                        cursor: pointer;
+                                        transition: all .25s;
+                                        &:active{
+                                            background: $primary-orange;
+                                        }
+                                        &.no-active{
+                                            background: #d3d3d3;
+                                            cursor: default;
+                                        }
+                                        i{}
+                                    }
+                                }
+                            }
+                            .cont-add-carro{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: $primary-green;
+                                color: $dark-icon-active;
+                                margin-top: 8px;
+                                border-radius: 3px;
+                                cursor: pointer;
+                                @include respondto(minxs) {
+                                    width: 96px;
+                                    height: 36px;
+                                }
+                                @include respondto(maxxs) {
+                                    width: 96px;
+                                    height: 36px;
+                                }
+                                @include respondto(sm) {
+                                    width: 76px;
+                                    height: 40px;
+                                }
+                                @include respondto(md) {
+                                    width: 76px;
+                                    height: 40px;
+                                }
+                                @include respondto(lg) {
+                                    width: 76px;
+                                    height: 40px;
+                                }
+                                &:hover{
+                                    background-color: $primary-green-hover;
+                                }
+                                .btn-add-carrito{
+                                    .fa-plus{}
+                                    .fa-shopping-cart{
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content-enlace{
+            display: flex;
+            width: 100%;
+            @include respondto(minxs) {
+                height: 53px;
+            }
+            @include respondto(maxxs) {
+                height: 53px;
+            }
+            @include respondto(sm) {
+                height: 50px;
+            }
+            @include respondto(md) {
+                height: 50px;
+            }
+            @include respondto(lg) {
+                height: 50px;
+            }
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                background-color: $color-btn-gris;
+                &:hover{
+                    span{
+                        &:after{
+                            margin-bottom: -2px;
+                            opacity: 1;
+                        }
+                    }
+                }
+                span{
+                    position: relative;
+                    text-transform: uppercase;
+                    color: $primary-orange;
+                    font-family: $font-Mont-Regular;
+                    font-weight: 600;
+                    @include fontsizeheight(14px,1,14px,1,14px,1);
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $primary-orange;
+                        bottom: 0;
+                        left: 0;
+                        margin-bottom: -10px;
+                        opacity: 0;
+                        transition: all .25s;
+                    }
+                }
+            }
+        }
+        .content-buscar-otros{
+            @include respondto(minxs) {
+                display: none;
+            }
+            @include respondto(maxxs) {
+                display: none;
+            }
+            @include respondto(sm) {}
+            @include respondto(md) {}
+            @include respondto(lg) {}
+            .lista-buscar-otros{
+                display: flex;
+                padding: 20px 30px;
+                .item-busca-otro{
+                    flex: 1;
+                    width: 33.33%;
+                    .otro-enlace{
+                        margin-right: 6%;
+                        a{
+                            display: flex;
+                            align-items: center;
+                            transition: all .25s;
+                            &:hover{
+                                margin-left: 3%;
+                            }
+                            i{
+                                font-size: 11px;
+                                color: #595959;
+                            }
+                            p{
+                                @include ajustacontrespuntos;
+                                color: #595959;
+                                padding: 0 0 0 5px;
+                                .texto-buscado{
+                                    font-weight: 800;
+                                }
+                                .categoria{
+                                    color: $primary-orange;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.fondo-buscados{
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,.2);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    cursor: pointer;
+    z-index: -20;
+    &.focus-active{
+        display: block;
+        z-index: 1100;
+    }
+}

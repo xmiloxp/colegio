@@ -1,0 +1,20 @@
+.loading-container {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+#nprogress .bar {
+  background: $primary-green;
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px $primary-green, 0 0 5px $primary-green;
+}
+#nprogress .spinner-icon {
+  border-top-color: $primary-green;
+  border-left-color: $primary-green;
+}

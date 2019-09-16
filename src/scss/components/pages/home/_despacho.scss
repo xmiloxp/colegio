@@ -1,0 +1,296 @@
+
+// BLOCK DESPACHO
+.fm-container-despacho{
+    position: fixed;
+    left: 100%;
+    top: 42px;
+    background: $fm-gris-500;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    @include ease-default;
+    z-index: 99999999;
+    overflow-y: auto;
+    overflow-x: auto;
+    @include respondto(minxs) {
+        top: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    @include respondto(maxxs) {
+        width: 100%;
+        max-height: calc(99vh - 42px);
+    }
+    @include respondto(sm) {
+        width: 700px;
+        max-height: calc(99vh - 42px);
+    }
+    @include respondto(md) {
+        width: 700px;
+        max-height: calc(99vh - 42px);
+    }
+    @include respondto(lg) {
+        width: 700px;
+        max-height: calc(99vh - 42px);
+    }
+    &.active{
+        transform: translateX(-100%)
+    }
+    .fm-head-despacho{
+        display: flex;
+        text-align: left;
+        align-items: center;
+        position: relative;
+        height: 52px;
+        background: $fm-gris-600;
+        .fm-title-despacho{
+            padding: 0 0 0 10px;
+            text-transform: uppercase;
+            color: $fm-text-despacho;
+            font-family: $font-Mont-Regular;
+            font-weight: 400;
+            @include fontsizeheight(16px,1.1,16px,1.1,16px,1.1);
+        }
+        .fm-close-despacho{
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            &:active{
+                transform: translateY(-51%);
+            }
+            i{
+                color: $fm-text-despacho;
+            }
+        }
+    }
+    .fm-body-despacho{
+        display: flex;
+        flex-direction: column;
+        .fm-container-distrito{
+            padding: 25px 10px 25px 10px;
+            .fm-original-distrito{
+                select{
+                    background-color: $fm-text-despacho;
+                    border: none;
+                    font-size: 14px;
+                    height: 29px;
+                    padding: 5px; /* If you add too much padding here, the options won't show in IE */
+                    width: auto;
+                    color: $fm-blanco;
+                    border-radius: 6px;
+                    border: none;
+                    box-shadow: none;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+            .fm-design-distrito{}
+        }
+        .fm-container-horario{
+            display: flex;
+            width: 100%;
+            @include respondto(minxs) {
+                padding: 0 12px 20px 12px;
+            }
+            @include respondto(maxxs) {
+                padding: 0 12px 20px 12px;
+            }
+            @include respondto(sm) {
+                padding: 0 20px 20px 15px;
+            }
+            @include respondto(md) {
+                padding: 0 20px 20px 15px;
+            }
+            @include respondto(lg) {
+                padding: 0 20px 20px 15px;
+            }
+            .fm-left-horario{
+                display: flex;
+                flex-direction: column;
+                width: 78px;
+                padding: 30px 5px 0 0;
+                .fm-hora{
+                    display: flex;
+                    justify-content: left;
+                    text-align: left;
+                    align-items: center;
+                    color: $fm-text-despacho;
+                    font-family: $font-Mont-Regular;
+                    font-weight: 400;
+                    @include fontsizeheight(12px,1.1,12px,1.1,11px,1.1);
+                    height: 49px;
+
+                }
+            }
+            .fm-right-horario{
+                width: calc(100% - 78px);
+                .view-content{
+                    .slick-arrow{
+                        position: absolute;
+                        padding: 0;
+                        cursor: pointer;
+                        color: transparent;
+                        border: 0px solid #fff;
+                        background: transparent;
+                        z-index: 5;
+                        width: 10px;
+                        height: 10px;
+                        &:hover{
+                            opacity: .5;
+                        }
+                        &:focus{
+                            color: transparent;
+                            outline: none;
+                            background: transparent;
+                        }
+                        &.slick-prev{
+                            top: 9px;
+                            left: 0;
+                            transform: rotate(90deg);
+                            @include respondto(xs) {
+                                left: -5px;
+                            }
+                            &:before{
+                                content: "\e903";
+                                font-family: 'icomoon';
+                                color: $fm-text-despacho;
+                                font-size: 10px;
+                                text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+                            }
+                        }
+                        &.slick-next{
+                            top: 9px;
+                            right: -10px;
+                            transform: rotate(-90deg);
+                            @include respondto(xs) {
+                                right: -5px;
+                            }
+                            &:before{
+                                content: "\e903";
+                                font-family: 'icomoon';
+                                color: $fm-text-despacho;
+                                font-size: 10px;
+                                text-shadow: -2px -2px 6px rgba(0, 0, 0, 0.5);
+                            }
+                        }
+                    }
+                    .slick-list{
+                        .slick-track{
+
+                            .fm-item-horario{
+                                .fm-content-dia{
+                                    .freshmart-dia{
+                                        display: flex;
+                                        justify-content: center;
+                                        text-align: center;
+                                        align-items: center;
+                                        height: 30px;
+                                        h3{
+                                            text-transform: uppercase;
+                                            color: $fm-text-despacho;
+                                            font-family: $font-Mont-Regular;
+                                            font-weight: 400;
+                                            @include fontsizeheight(11px,1.1,11px,1.1,11px,1.1);
+                                        }
+                                    }
+                                    .freshmart-hour{
+                                        display: flex;
+                                        flex-direction: column;
+                                        .freshmart-info{
+                                            display: flex;
+                                            justify-content: center;
+                                            text-align: center;
+                                            align-items: center;
+                                            height: 47px;
+                                            background: $fm-blanco;
+                                            border-radius: 6px;
+                                            margin: 2px 1px;
+                                            &.hour-active{
+                                                background: $fm-verde;
+                                            }
+                                            p{
+                                                text-transform: uppercase;
+                                                color: $fm-text-despacho;
+                                                font-family: $font-Mont-Regular;
+                                                font-weight: 400;
+                                                @include fontsizeheight(12px,1.1,12px,1.1,11px,1.1);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .fm-container-botones{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 15px 30px 88px;
+            @include respondto(minxs) {
+                padding: 0 15px 0 5 8px;
+            }
+            a.fm-btn{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                min-height: 18px;
+                padding: 0 10px 0 10px;
+                border: 1px solid $fm-text-despacho;
+                border-radius: 6px;
+                background: $fm-blanco;
+                p{
+                    color: $fm-text-despacho;
+                    font-family: $font-Mont-Regular;
+                    font-weight: 400;
+                    @include fontsizeheight(12px,1.1,12px,1.1,11px,1.1);
+                }
+                i{
+                    padding: 0 0 0 10px;
+                    color: $fm-text-despacho;
+                }
+            }
+        }
+    }
+    .fm-footer-despacho{
+        .fm-detalles-despacho{
+            padding: 0 12px 0 12px;
+            a{
+                display: flex;
+                align-items: center;
+                padding: 0 0 10px 0;
+                i{
+                    font-size: 14px;
+                    color: #000;
+                }
+                p{
+                    padding: 0 0 0 5px;
+                    text-transform: uppercase;
+                    color: $fm-text-despacho;
+                    font-family: $font-Mont-Bold;
+                    font-weight: 700;
+                    @include fontsizeheight(12px,1.1,12px,1.1,11px,1.1);
+                    &:hover{
+                        color: #000;
+                    }
+                }
+            }
+        }
+        .fm-condiciones-despacho{
+            padding: 0 12px 20px 12px;
+            ul{
+                li{
+                    color: $fm-text-despacho;
+                    font-family: $font-Mont-Regular;
+                    font-weight: 400;
+                    @include fontsizeheight(12px,1,12px,1,12px,1);
+                    padding: 0 0 3px 0;
+                }
+            }
+        }
+    }
+}

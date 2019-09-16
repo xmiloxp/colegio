@@ -1,0 +1,52 @@
+/**************** RESPONSIVE *********************/
+$xs: 576px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$mobile-landscape: 480px;
+$tablet-landscape: 1024px;
+/**************** /RESPONSIVE *********************/
+
+
+
+/********* FONTS ***********/
+$font-Roboto: 'Roboto', serif, sans-serif;
+$font-Mont: 'Montserrat', $font-Roboto;
+$font-Mont-Light: 'Montserrat-Light','Montserrat', $font-Roboto;
+$font-Mont-Regular: 'Montserrat-Regular','Montserrat', $font-Roboto;
+$font-Mont-Bold: 'Montserrat-Bold','Montserrat', $font-Roboto;
+/********* /FONTS ***********/
+$colorBackground: white;
+$colorBackgroundBody: #f2f4f7;
+$colorText: #646777;
+$colorTextAdditional: #646777;
+$colorHover: #fafbfe;
+$colorBorder: #eff1f5;
+$colorIcon: #dddddd;
+$imgInvert: invert(0%);
+$colorFieldsBorder: #f2f4f7;
+$colorBubble: rgba(242, 244, 247, 0.65);
+$colorBubbleActive: rgba(234, 238, 255, 0.6);
+$colorScrollbar: #B4BFD0;
+$colorFitness: #646777;
+
+$color-accent: #70bbfd;
+$color-accent-hover: darken($color-accent, 10%);
+$color-additional: #999999;
+$color-additional-hover: darken($color-additional, 10%);
+
+$color-yellow: #f6da6e;
+$color-yellow-hover: darken($color-yellow, 10%);
+
+$color-violet: #c88ffa;
+
+$color-green: #4ce1b6;
+$color-green-hover: darken($color-accent, 10%);
+
+$color-red: #ff4861;
+$color-red-hover: darken($color-red, 10%);
+
+$color-blue: #70bbfd;
+$color-blue-hover: darken($color-blue, 10%);
+
+$color-gray: #787985;

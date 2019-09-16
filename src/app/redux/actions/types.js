@@ -1,0 +1,136 @@
+// auth
+export const LOGIN = 'LOGIN';
+export const LOGIN_PENDING = 'LOGIN_PENDING';
+export const LOGIN_FULFILLED = 'LOGIN_FULFILLED';
+export const LOGIN_REJECTED = 'LOGIN_REJECTED';
+export const FETCH_USER = 'FETCH_USER';
+
+// ubigeo
+export const FETCH_UBIGEO = 'FETCH_UBIGEO'
+export const SET_COD_DEP = 'SET_COD_DEP';
+export const SET_COD_PRO = 'SET_COD_PRO';
+export const FETCH_DEPARTMENTS = 'FETCH_DEPARTMENTS';
+export const FETCH_PROVINCES = 'FETCH_PROVINCES';
+export const FETCH_DISTRICTS = 'FETCH_DISTRICTS';
+
+// menu
+export const FETCH_MENU_DATA = 'FETCH_MENU_DATA';
+
+// enterprise
+export const FECTH_ENTERPRISE = 'FETCH_ENTERPRISE';
+export const INSERT_ENTERPRISE = 'INSERT_ENTERPRISE';
+export const UPDATE_ENTERPRISE = 'UPDATE_ENTERPRISE';
+
+// enrollment
+export const FECTH_ENROLLMENTS = 'FETCH_ENROLLMENTS';
+export const INSERT_ENROLLMENT = 'INSERT_ENROLLMENT';
+
+// global
+export const CHANGE_LAYOUT_COLLAPSED = 'CHANGE_LAYOUT_COLLAPSED';
+export const SET_PAGINATION = 'SET_PAGINATION';
+
+// Sedes: seats
+export const LOADING_FETCH = 'LOADING';
+export const FETCH_SEATS = 'FETCH_SEATS';
+export const INSERT_SEAT = 'INSERT_SEAT';
+export const UPDATE_SEAT = 'UPDATE_SEAT';
+export const DELETE_SEAT = 'DELETE_SEAT';
+
+// Año escolar: School year
+export const FETCH_ACADEMICYEARS = 'FETCH_ACADEMICYEARS';
+export const FETCH_ACADEMICYEAR = 'FETCH_ACADEMICYEAR';
+export const CHANGE_STATE_ACADEMICYEAR = 'CHANGE_STATE_ACADEMICYEAR';
+export const INSERT_ACADEMICYEAR = 'INSERT_ACADEMICYEAR';
+export const UPDATE_ACADEMICYEAR = 'UPDATE_ACADEMICYEAR';
+export const DELETE_ACADEMICYEAR = 'DELETE_ACADEMICYEAR';
+
+// Descuentos: discounts
+  // type
+export const FETCH_TYPEDISCOUNTS = 'FETCH_TYPEDISCOUNTS';
+export const INSERT_TYPEDISCOUNT = 'INSERT_TYPEDISCOUNT';
+export const UPDATE_TYPEDISCOUNT = 'UPDATE_TYPEDISCOUNT';
+export const DELETE_TYPEDISCOUNT = 'DELETE_TYPEDISCOUNT';
+
+export const FETCH_DISCOUNTS = 'FETCH_DISCOUNTS';
+export const INSERT_DISCOUNT = 'INSERT_DISCOUNT';
+export const UPDATE_DISCOUNT = 'UPDATE_DISCOUNT';
+export const DELETE_DISCOUNT = 'DELETE_DISCOUNT';
+
+// Pension: MonthlyPayment
+export const FETCH_MONTHLYPAYMENT = 'FETCH_MONTHLYPAYMENT';
+
+// Concept: Enrollment
+export const FETCH_CONCEPTS_ENROLLMENT = 'FETCH_CONCEPTS_ENROLLMENT';
+
+// Producto: products
+export const FETCH_CONCEPTS = 'FETCH_CONCEPTS';
+export const FETCH_CONCEPT = 'FETCH_CONCEPT';
+export const INSERT_CONCEPT = 'INSERT_CONCEPT';
+export const UPDATE_CONCEPT = 'UPDATE_CONCEPT';
+export const DELETE_CONCEPT = 'DELETE_CONCEPT';
+
+// Alumnos: students
+export const FETCH_STUDENTS = 'FETCH_STUDENTS';
+export const INSERT_STUDENT = 'INSERT_STUDENT';
+
+// Empleado: employee
+export const FETCH_EMPLOYEES = 'FETCH_EMPLOYEES';
+export const INSERT_EMPLOYEE = 'INSERT_EMPLOYEE';
+
+// Pariente: parent
+export const FETCH_PARENTS = 'FETCH_PARENTS';
+export const INSERT_PARENT = 'INSERT_PARENT';
+
+// Padre: father
+export const FETCH_FATHER = 'FETCH_FATHER';
+export const INSERT_FATHER = 'INSERT_FATHER';
+// Madre: mother
+export const FETCH_MOTHER = 'FETCH_MOTHER';
+export const INSERT_MOTHER = 'INSERT_MOTHER';
+
+// Complement
+export const LOAD_MOTHERS = 'LOAD_MOTHERS';
+export const LOAD_FATHERS = 'LOAD_FATHERS';
+export const LOAD_PARENTS = 'LOAD_PARENTS';
+export const LOAD_SEATS = 'LOAD_SEATS';
+export const LOAD_LEVELS = 'LOAD_LEVELS';
+export const LOAD_GRADES = 'LOAD_GRADES';
+export const LOAD_VOUCHERTYPES = 'LOAD_VOUCHERTYPES';
+export const LOAD_PAYMODES = 'LOAD_PAYMODES';
+export const LOAD_CLASSROOMS = 'LOAD_CLASSROOMS';
+export const LOAD_ROLES = 'LOAD_ROLES';
+export const LOAD_EMPLOYEES = 'LOAD_EMPLOYEES';
+export const LOAD_TYPEDISCOUNT = 'LOAD_TYPEDISCOUNT';
+export const LOAD_DISCOUNT = 'LOAD_DISCOUNT';
+export const LOAD_STUDENTS = 'LOAD_STUDENTS';
+// export const LOAD_CLASSROOMS_ENROLLMENT = 'LOAD_CLASSROOM_ENROLLMENT';
+
+// LEVELS
+export const FETCH_LEVELS = 'FETCH_LEVELS';
+export const FETCH_LEVEL = 'FETCH_LEVEL';
+export const INSERT_LEVEL = 'INSERT_LEVEL';
+export const UPDATE_LEVEL = 'UPDATE_LEVEL';
+export const DELETE_LEVEL = 'DELETE_LEVEL';
+
+// GRADES
+export const FETCH_GRADES = 'FETCH_GRADES';
+export const FETCH_GRADE = 'FETCH_GRADE';
+export const INSERT_GRADE = 'INSERT_GRADE';
+export const UPDATE_GRADE = 'UPDATE_GRADE';
+export const DELETE_GRADE = 'DELETE_GRADE';
+
+// CLASS ROOM
+export const FETCH_CLASSROOMS = 'FETCH_CLASSROOMS';
+export const FETCH_CLASSROOM = 'FETCH_CLASSROOM';
+export const INSERT_CLASSROOM = 'INSERT_CLASSROOM';
+export const UPDATE_CLASSROOM = 'UPDATE_CLASSROOM';
+export const DELETE_CLASSROOM = 'DELETE_CLASSROOM';
+
+// USER
+export const FETCH_USERS = 'FETCH_USERS';
+export const INSERT_USER = 'INSERT_USER';
+
+// CASHBOX
+export const FETCH_CASHBOXES = 'FETCH_CASHBOXES';
+export const INSERT_CASHBOX = 'INSERT_CASHBOX';
+export const UPDATE_CASHBOX = 'UPDATE_CASHBOX';

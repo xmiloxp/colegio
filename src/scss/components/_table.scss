@@ -1,0 +1,28 @@
+.table-btn {
+  background: transparent;
+  border: none;
+  line-height: 14px;
+  padding: 0 0 0 20px;
+  position: relative;
+  color: $color-additional;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  svg {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    fill: $color-additional;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    color: $color-red-hover;
+
+    svg {
+      fill: $color-red-hover;
+    }
+  }
+}

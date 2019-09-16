@@ -1,0 +1,119 @@
+// footer{
+//     color: $gray-light;
+//     font-size: 14px;
+//     text-align: center;
+//     padding: 32px;
+//     background: $gray-dark-bg;
+//     strong{
+//         color: $gray-medium;
+//     }
+//     .footer-links{
+//         margin-bottom: 24px;
+//         a{
+//             margin: 0 8px;
+//             color: $gray-medium;
+//         }
+//     }
+// }
+
+.container-footer{
+    background: $primary-grey;
+    padding: 40px 10px 30px 10px;
+    .aux-footer{
+        .container-lista-footer{
+            display: flex;
+            @include respondto(minxs) {
+                flex-wrap: wrap;
+            }
+            @include respondto(maxxs) {
+                flex-wrap: wrap;
+            }
+            @include respondto(sm) {
+                flex-wrap: wrap;
+            }
+            @include respondto(md) {}
+            @include respondto(lg) {}
+            .container-item-footer{
+                display: flex;
+                flex-direction: column;
+                padding: 0 15px 40px 0;
+                @include respondto(minxs) {
+                    width: 50%;
+                }
+                @include respondto(maxxs) {
+                    width: 50%;
+                }
+                @include respondto(sm) {
+                    width: 20%;
+                }
+                @include respondto(md) {
+                    width: 20%;
+                }
+                @include respondto(lg) {
+                    width: 20%;
+                }
+                .title-footer{
+                    text-transform: uppercase;
+                    font-family: $font-Mont-Regular;
+                    font-weight: 800;
+                    font-size: 16px;
+                    color: $white;
+                    padding: 0 0 23px 0;
+                    @include respondto(minxs) {
+                        font-size: 14px;
+                    }
+                    @include respondto(maxxs) {}
+                    @include respondto(sm) {}
+                    @include respondto(md) {}
+                    @include respondto(lg) {}
+                }
+                .container-links-footer{
+                    .text-footer{
+                        p{
+                            text-transform: uppercase;
+                            font-family: $font-Mont-Regular;
+                            font-weight: 600;
+                            font-size: 13px;
+                            line-height: 1.4;
+                            color: $white;
+                        }
+                    }
+                    .link-footer{
+                        @include ajustacontrespuntos;
+                        color: $white;
+                        padding: 0 0 5px 0;
+                        a{
+                            text-transform: uppercase;
+                            font-family: $font-Mont-Regular;
+                            font-weight: 600;
+                            font-size: 13px;
+                            color: $white;
+                            &:hover{
+                                color: $primary-orange;
+                            }
+                        }
+                    }
+                    .link-icon-footer{
+                        display: flex;
+                        float: left;
+                        a{
+                            margin: 0 15px 15px 0;
+                            i{
+                                color: $white;
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+                .link-te-falta{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a{
+                        img{}
+                    }
+                }
+            }
+        }
+    }
+}

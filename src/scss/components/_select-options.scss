@@ -1,0 +1,15 @@
+.select-options {
+  margin: 0 4px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: transparent;
+  color: $colorText;
+
+  &:focus {
+    outline: none;
+  }
+
+  option {
+      background-color: $colorBackground;
+  }
+}
